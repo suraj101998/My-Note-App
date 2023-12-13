@@ -59,7 +59,11 @@ async function SeleniumTest() {
         await sleep (2000);
         //console.log("Searched the edited first note")
 
+<<<<<<< HEAD
         //console.log("********All Login test passed***********")
+=======
+        
+>>>>>>> feature-branch-2
 
     } catch(error) {
         console.error("Login test failed", error)
