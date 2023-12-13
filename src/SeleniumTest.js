@@ -59,7 +59,7 @@ async function SeleniumTest() {
         await sleep (2000);
         console.log("Searched the edited first note")
 
-        console.log("********All Login test passed***********")
+        //console.log("********All Login test passed***********")
 
     } catch(error) {
         console.error("Login test failed", error)
