@@ -1,0 +1,171 @@
+/* Reset some default browser styles */
+body, ul {
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Set a background color for the entire app */
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgb(67, 138, 205);
+  color: #fff;
+}
+
+/* Style the main content container */
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the "Add a New Note" section */
+h2 {
+  margin-top: 0;
+}
+
+/* Style the note input form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  padding: 20px 20px;
+  background-color: rgb(228, 135, 6);
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* Style the list of notes */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+li.note-item {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the note content */
+.note-content {
+  flex: 1;
+}
+
+/* Style the "Edit" and "Delete" buttons */
+.note-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.note-edit {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 5px;
+}
+
+/* Style the "Edit" and "Delete" buttons */
+button.edit {
+  background-color: #5a9b2b;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px; /* Increase the font size */
+  padding: 10px 20px; /* Increase the padding */
+}
+
+button.delete {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px; /* Increase the font size */
+  padding: 10px 20px; /* Increase the padding */
+}
+
+/* Style the "Edit" and "Delete" buttons */
+button.save {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px; /* Increase the font size */
+  padding: 10px 20px; /* Increase the padding */
+}
+
+button.cancel {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px; /* Increase the font size */
+  padding: 10px 20px; /* Increase the padding */
+}
+
+/* Style the search input */
+.search {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style error messages */
+.error {
+  color: #ff0000;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .App {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    flex: 1;
+    padding: 8px;
+  }
+
+  button[type="submit"] {
+    padding: 8px 16px;
+  }
+}
