@@ -26,7 +26,7 @@ async function SeleniumTest() {
         await driver.findElement(By.xpath('//*[@id="root"]/div/form/button')).click()
         await sleep (2000);
 
-        console.log("Added three Notes")
+        //console.log("Added three Notes")
 
         //save the Edit a Note
         await driver.findElement(By.className('edit')).click();
@@ -36,7 +36,7 @@ async function SeleniumTest() {
         await driver.findElement(By.xpath('//*[@id="root"]/div/ul/li/div/button[1]')).click();
         await sleep (2000);
 
-        console.log("Edited and Saved the first note")
+        //console.log("Edited and Saved the first note")
 
         //cancel the edit of a note
         await driver.findElement(By.className('edit')).click();
@@ -46,18 +46,18 @@ async function SeleniumTest() {
         await driver.findElement(By.xpath('//*[@id="root"]/div/ul/li/div/button[2]')).click();
         await sleep (2000);
 
-        console.log("cancelled the further editing of the first note")
+        //console.log("cancelled the further editing of the first note")
 
         //delete only the second note
         await driver.findElement(By.xpath('//*[@id="root"]/div/ul/li[2]/div[2]/button[2]')).click();
         await sleep (2000);
-        console.log("deleted second note")
+        //console.log("deleted second note")
 
         //Search for the Note
         await driver.findElement(By.xpath('//*[@id="root"]/div/div/input')).sendKeys('My First Note Edited');
         await driver.wait(until.elementLocated(By.className('note-content')),5000);
         await sleep (2000);
-        console.log("Searched the edited first note")
+        //console.log("Searched the edited first note")
 
         console.log("********All Login test passed***********")
 
